@@ -1,0 +1,19 @@
+O1: Specification and Testbench
+Begin with writing specifications using a C model.
+Develop a testbench to validate functional behavior before hardware implementation.
+This phase ensures clarity in design intent and sets the foundation for RTL development.
+
+O2: RTL Development and Synthesis
+Convert specifications into RTL using Verilog.
+Define core components: processor and peripheral IPs.
+Synthesize RTL into:
+Gate-level netlists (for processor and digital logic).
+Macros (pre-verified blocks reused across designs).
+Analog IPs (functional blocks interfacing with physical signals).
+This stage produces the soft copy of the hardware design.
+
+O3: SoC Integration and Physical Design
+Perform floorplanning, placement, routing, and timing closure.
+Place macros and analog IPs in fixed locations to optimize layout reuse.
+Finalize physical design into GDSII format.
+Run DRC (Design Rule Check) and LVS (Layout Versus Schematic) to ensure fabrication readiness and logical correctness.
